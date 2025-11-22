@@ -36,8 +36,8 @@ COOKIES_DEBUG = False
 
 # 在文件末尾添加MySQL数据库配置
 MYSQL_HOST = 'localhost'
-MYSQL_USER = 'root'
-MYSQL_PASSWORD = 'root'
+MYSQL_USER = ''
+MYSQL_PASSWORD = ''
 MYSQL_DATABASE = 'books_db'
 MYSQL_PORT = 3306
 CHARSET = 'utf8mb4'
