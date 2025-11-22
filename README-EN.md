@@ -59,7 +59,7 @@ bookschina/
 
 2. Install dependencies
 ```bash
-cd d:\bookschina
+cd path/to/bookschina
 pip install scrapy pymysql fake_useragent
 ```
 
@@ -67,15 +67,15 @@ pip install scrapy pymysql fake_useragent
 Edit the `bookschina/settings.py` file to modify MySQL connection information:
 ```python
 MYSQL_HOST = 'localhost'       # Database host
-MYSQL_USER = 'root'            # Database username
-MYSQL_PASSWORD = 'root'        # Database password
-MYSQL_DATABASE = 'books_db'    # Database name
+MYSQL_USER = 'your_username'   # Database username
+MYSQL_PASSWORD = 'your_password'  # Database password
+MYSQL_DATABASE = 'your_database'  # Database name
 MYSQL_PORT = 3306              # Database port
 CHARSET = 'utf8mb4'            # Character set
 ```
 
 4. Configure Cookies (optional)
-Save your Cookies file as `ztw_cookies-1.json`, or modify the Cookies loading path in `bsc_spider.py`.
+Save your Cookies file in the project-supported format, or modify the Cookies loading path in `bsc_spider.py`.
 
 5. Start the crawler
 ```bash
@@ -166,7 +166,7 @@ CREATE TABLE books_tb (
    - Use scheduled tasks to run the crawler regularly to update data
    - Example (Windows Task Scheduler):
      ```
-     python d:\bookschina\start_bsc_spider.py
+     python path/to/bookschina/start_bsc_spider.py
      ```
 
 ## 🔧 Common Issues and Solutions
@@ -203,7 +203,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 📧 Contact Information
 
-- Project Address: https://github.com/
+- Project Address: [Github](https://github.com/JoeBiden-Engineer/BooksChinaScrapy/)
 
 ---
 

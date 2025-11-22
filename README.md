@@ -59,7 +59,7 @@ bookschina/
 
 2. 安装依赖
 ```bash
-cd d:\bookschina
+cd path/to/bookschina
 pip install scrapy pymysql fake_useragent
 ```
 
@@ -67,15 +67,15 @@ pip install scrapy pymysql fake_useragent
 编辑 `bookschina/settings.py` 文件，修改 MySQL 连接信息：
 ```python
 MYSQL_HOST = 'localhost'       # 数据库主机
-MYSQL_USER = 'root'            # 数据库用户名
-MYSQL_PASSWORD = 'root'        # 数据库密码
-MYSQL_DATABASE = 'books_db'    # 数据库名称
+MYSQL_USER = 'your_username'   # 数据库用户名
+MYSQL_PASSWORD = 'your_password'  # 数据库密码
+MYSQL_DATABASE = 'your_database'  # 数据库名称
 MYSQL_PORT = 3306              # 数据库端口
 CHARSET = 'utf8mb4'            # 字符集
 ```
 
 4. 配置 Cookies（可选）
-将你的 Cookies 文件保存为 `ztw_cookies-1.json`，或修改 `bsc_spider.py` 中的 Cookies 加载路径。
+将你的 Cookies 文件保存为项目支持的格式，或修改 `bsc_spider.py` 中的 Cookies 加载路径。
 
 5. 启动爬虫
 ```bash
@@ -166,7 +166,7 @@ CREATE TABLE books_tb (
    - 使用定时任务定期运行爬虫更新数据
    - 示例（Windows 计划任务）：
      ```
-     python d:\bookschina\start_bsc_spider.py
+     python path/to/bookschina/start_bsc_spider.py
      ```
 
 ## 🔧 常见问题与解决方案
@@ -203,7 +203,7 @@ CREATE TABLE books_tb (
 
 ## 📧 联系方式
 
-- 项目地址：https://github.com/
+- 项目地址：[Github](https://github.com/JoeBiden-Engineer/BooksChinaScrapy/)
 
 ---
 
