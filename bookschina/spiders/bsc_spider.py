@@ -19,7 +19,7 @@ class BscSpiderSpider(scrapy.Spider):
         self.success_count = 0
     def load_cookies(self):
         try:
-            with open('D:\Study_or_work\CQIE_Python\CQIE_Spiders\Spider_Test\ztw_cookies-1.json', 'r', encoding='utf-8') as f:
+            with open('D:\\ztw_cookies.json', 'r', encoding='utf-8') as f:
                 cookies_list = json.load(f)
                 cookies_dict = {cookie['name']: cookie['value'] for cookie in cookies_list}
                 self.logger.info(f"成功加载{len(cookies_dict)}个Cookie")
